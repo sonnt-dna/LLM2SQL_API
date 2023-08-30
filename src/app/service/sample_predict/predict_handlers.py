@@ -34,7 +34,7 @@ def llm2sql(parameter):
     # connection_string = f'mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}&TrustServerCertificate=no&Authentication=ActiveDirectoryPassword'
     params = 'Driver=' + driver + ';Server=' + server + ',1433;Database=' + database + ';Uid={' + username + '};Pwd={' + password + '};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;Authentication=ActiveDirectoryPassword'
     
-    openai.api_key = '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'
+    # openai.api_key = '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'
 
     # 1. Kết nối đến cơ sở dữ liệu sử dụng pyodbc
     # ### PART 2: DEFINE FUNCTIONS
@@ -79,7 +79,7 @@ def llm2sql(parameter):
     userquest_input = userquest
 
     #Modeling for the question
-    openai.api_key = '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'
+    openai.api_key = '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'
     context = f'You are data analyst who knows well about oil field and well with the data base about well log has schema like this:{schema}, for A is Table name in the system, B is column name, and C is Column data type. Any column named WELL_UWI means well name.Generate only SQL function to answer user question, basing on schema. Dont explain anything further or ask back. Dont give columns name that does not appear in schema'
 
     response = openai.ChatCompletion.create(
