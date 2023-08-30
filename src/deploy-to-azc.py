@@ -6,8 +6,8 @@
 
 # String variables: Replace with your own
 tenant_id = 'c5ec5abe-76c1-46cb-b3fe-c3b0071ffdb3'
-# subscription_id = '3f032690-5d12-4e57-ba05-67aa46800f7e'
-subscription_id = '2f9bda04-bf37-41f3-901e-31537a8b84d3'
+# Subscription: github@oilgas.ai
+subscription_id = '1cb41e50-ec41-4557-bb29-aeb93f772c30'
 resource_group_name = 'azc-container-app-rs-group'
 container_app_environment_name = 'azc-environment'
 
@@ -19,6 +19,7 @@ container_app_environment_name = 'azc-environment'
 # Delegated permission Power BI Service
 # Để sử dụng được Azure App thì trong Subscription, cần cấp quyền cho Security Group có chứa Azure App
 # với quyền "Owner" hoặc "Contributor" trong mục "Access control (IAM)"
+# Security group: nhuduc_security_group_to_access_sharepoint
 client_id = 'c3bf460c-3f80-48cb-ba7c-9597aa013552'
 client_secret = 'MLV8Q~lxSThzcjq3rkSCvSZjvCBFy6Gjdzot8aIM' 
 
